@@ -1,0 +1,32 @@
+.ge--content-library {
+    display: none;
+}
+.ge--situation-link {
+    color: #600;
+    cursor: pointer;
+}
+.ge--selected-option {
+    font-weight: bold;
+}
+ul.ge--options {
+    border: 2px solid #876;
+    padding: 0;
+    margin-top: 0.5em;
+    margin-bottom: 0.7em;
+    list-style-type: none;
+    border-radius: 4px;
+}
+ul.ge--options li {
+    border-bottom: 1px solid #876;
+    padding: 0.5em;
+}
+ul.ge--options li:hover {
+    background-color: rgba(153,136,119,0.2);
+    cursor: pointer;
+}
+ul.ge-options li:last-child {
+    border-bottom: none;
+}
+.ge--situation {
+    transition: opacity 0.3s ease;
+}

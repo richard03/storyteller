@@ -1,0 +1,10 @@
+body {
+    background: #110;
+}
+.ge--book-title,
+.ge--content-wrapper {
+    max-width: 600px;
+    padding: 20px;
+    margin: 10px auto;
+    background: #fda;
+}

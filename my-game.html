@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- Game Title: edit this -->
+        <title>Storyteller</title>
+        <!-- / Game Title -->
+
+        <meta name="viewport" content="user-scalable=no, width=device-width">
+
+        <link rel="stylesheet" type="text/css" href="./css/game-engine.css">
+        <link rel="stylesheet" type="text/css" href="./my-game.css">
+    </head>
+    <body>
+        <!-- Game Title: edit this -->
+        <h1 class="ge--book-title">Moje první kniha</h1>
+        <!-- / Game Title -->
+
+        <noscript><p class="noscript_message">Tato hra vyžaduje Javascript.</p></noscript>
+
+        <div class="ge--content-wrapper">
+            <div class="ge--content">
+            </div>
+            <a name="end_of_content"></a>
+        </div>
+
+        <!-- You don't need to have this block here, but it is defined in
+             the CSS file as hidden, so it is a good spot to hide content
+             you want to load from your game code. See the
+             tutorial.game.js file for details of how this is used. -->
+        <div class="ge--content-library">
+
+            <div id="s_001" class="ge--situation">
+                <h1>Ďáblovy zuby</h1>
+                <p>
+                    Obloha je šedá a vítr hlasitě skučí mezi čedičovými balvany Ďáblových zubů. Sotva znatelná stezka se klikatí sopečným polem mezi řídkou kosodřevinou.
+                </p>
+                <p>
+                    Karavana postupuje vytrvale, jako by poutníci ani zvířata nebrali žádný ohled na ledový vítr, ani na občasnou spršku deště se sněhem.
+                </p>        
+                <p>
+                    Průvodce, kterého jste najali před dvěma dny ve vsi na úpatí, se k tobě otočil. "A co ty jsi vlastně zač?"
+                </p>
+                <ul class="ge--options">
+                    <li data-ref="start-soldier">"Zmlkni a raději čum na cestu, není tu bezpečno", utnu jeho žvanění.</a> <em>(voják)</em></li>
+                    <li data-ref="start-tinkerer">"Mistr devatera řemesel, technikus a vynálezce, k vašim službám."</a> <em>(technolog)</em></li>
+                    <li data-ref="start-scout">"Stopař", utrousím a několika rychlými kroky se od dotěrného vesničana vzdálím.</a> <em>(stopař)</em></li>
+                </ul>
+            </div>
+
+            <div id="s_start-soldier" class="ge--situation">
+                <p>Vesničan se odvrátil, popotáhl si kapuci, aby ho lépe chránila před větrem, a zanechal mě mým myšlenkám.</p>
+                <p><em>
+                    Jak jsem se vůbec dostal na tuhle ztracenou vartu? Ještě před pár týdny člen dóžecí stráže, v komfortu palácových kasáren, a teď tohle.
+                    No nedá se nic dělat, štěstěna je vrtkavá. Dóže je mrtvý a od těch fanatiků, co ovládli Republiku, je lepší se držet dál. I kdyby to znamenalo plahočit se v zimě a vlhku touhle vysočinou.
+                </em></p>
+                <p>
+                    Tyhle úvahy vzápětí přerušil výkřik. Zdá se, že stopař v čele karavany něco objevil. A vzápětí už to také vidíš: řada kamenů, mnohem pravidelnější než cokoli co tu vytvořily přírodní živly. Tohle je dozajista dílo lidských rukou. Což může znamenat nebezpečí.
+                </p>
+                <p>
+                    Přistoupil jsi k hloučku v čele karavany.
+                </p>
+                <p>
+                    "Ty, ty a ty, prozkoumáte ruinu.", ukázal vůdce karavany Halran na stopaře, tebe a Ortona. "Ostatní připravit obranu, kdyby se něco semlelo."
+                <p>
+                <ul class="ge--options">
+                    <li data-ref="s_003_menhirs">"Půjdu první, držte se za mnou", zavelím a vyrazím směrem k ruinám.</a></li>
+                    <li data-ref="s_003_menhirs">Překontroluji zbraně a vyrazím svými druhy, kteří se opatrně vydali k řadě balvanů.</a></li>
+                </ul>
+            </div>
+
+            <div id="s_start-tinkerer" class="ge--situation">
+                <p>Druhá scéna</p>
+                <p>
+                    Je to horší
+                </p>
+                <p class='transient'>
+                    Let's <a href='todo'>move on again</a>.
+                </p>
+            </div>
+
+            <div id="s_start-scout" class="ge--situation">
+                <h1>Druhá scéna</h1>
+                <p>
+                    Je to horší
+                </p>
+                <p class='transient'>
+                    Let's <a href='todo'>move on again</a>.
+                </p>
+            </div>
+
+            <div id="s_003_menhirs" class="ge--situation">
+                <p>
+                    Menhiry jsou staré, porostlé lišejníkem. Zblízka je vidět, že je nepochybně vztyčili lidé, jsou do nich vytesané jakési značky.
+                </p>
+                <ul class="ge--options">
+                    <li data-ref="s_004_menhirs_look">Prohlédnu si pečlivě značky a pokusím se něco z nich vyčíst.</a></li>
+                    <li data-ref="s_006_menhirs_enter">Projdu řadou menhirů abych zjistit, co se skrývá za nimi.</a></li>
+                    <li data-ref="s_005_menhirs_hear">Zaposlouchám se abych zjistil, zda na nás nečíhá nějaké léčka.</a></li>
+                </ul>
+            </div>
+
+            <div id="s_004_menhirs_look" class="ge--situation">
+                <p>
+                    TODO
+                </p>
+                <ul class="ge--options">
+                    <li data-ref="s_006_menhirs_enter">Projdu řadou menhirů abych zjistit, co se skrývá za nimi.</a></li>
+                    <li data-ref="s_005_menhirs_hear">Zaposlouchám se abych zjistil, zda na nás nečíhá nějaké léčka.</a></li>
+                </ul>
+            </div>
+
+            <div id="s_005_menhirs_hear" class="ge--situation">
+                <p>
+                    TODO
+                </p>
+                <ul class="ge--options">
+                    <li data-ref="s_004_menhirs_look">Prohlédnu si pečlivě značky a pokusím se něco z nich vyčíst.</a></li>
+                    <li data-ref="s_006_menhirs_enter">Projdu řadou menhirů abych zjistit, co se skrývá za nimi.</a></li>
+                </ul>
+            </div>
+
+            <div id="s_006_menhirs_enter" class="ge--situation">
+                <p>
+                    TODO
+                </p>
+                <ul class="ge--options">
+                </ul>
+            </div>
+
+
+            <div id="s_002" class="ge--situation">
+                <p>
+                    TODO
+                </p>
+            </div>
+
+        </div>
+
+        <script type="text/javascript" src="./js/jquery-2.1.3.min.js"></script>
+        <script type="text/javascript" src="./js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="./js/game-engine.js"></script>
+
+        <script type="text/javascript" src="./my-game.js"></script>
+    </body>
+</html>
